@@ -224,8 +224,7 @@ export class Screener {
     await page.goto(`${input.BASE_URL}/company/${company}/consolidated/#peers`, {
       waitUntil: 'load',
     })
-    // await page.waitFor(200)
-    // anand
+
     await page.waitForSelector(selectors.PEER_TABLE_ROWS, {
       visible: true,
       timeout: TIMEOUT,
