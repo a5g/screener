@@ -1,0 +1,49 @@
+{
+  "name": "screener-automation",
+  "version": "1.0.0",
+  "description": "Test automation project to grab the stocks data from screener.in",
+  "repository": "",
+  "scripts": {
+    "test": "gulp profit",
+    "lint": "tslint .",
+    "report": "allure serve",
+    "allure-report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "author": "Anand Ganesh",
+  "license": "ISC",
+  "keywords": [
+    "screener",
+    "stock",
+    "investor",
+    "investment"
+  ],
+  "dependencies": {
+    "allure-js-commons": "^2.0.0-beta.6",
+    "expect-puppeteer": "^4.3.0",
+    "jest-allure": "^0.1.1",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/expect-puppeteer": "^3.3.3",
+    "@types/gulp": "^4.0.6",
+    "@types/jest": "^24.0.25",
+    "@types/jest-environment-puppeteer": "^4.3.1",
+    "@types/jest-expect-message": "^1.0.1",
+    "@types/node": "^12.12.9",
+    "@types/puppeteer": "^2.0.0",
+    "allure-commandline": "^2.13.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-run-command": "0.0.10",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-environment-puppeteer": "^4.4.0",
+    "jest-puppeteer": "^4.4.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2"
+  }
+}
