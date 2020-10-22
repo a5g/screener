@@ -221,7 +221,7 @@ export class Screener {
   }
 
   async gotoCompanyPeers(company) {
-    await page.goto(`${input.BASE_URL}/company/${company}/#peers`, {
+    await page.goto(`${input.BASE_URL}/company/${company}/consolidated/#peers`, {
       waitUntil: 'load',
     })
     // await page.waitFor(200)
